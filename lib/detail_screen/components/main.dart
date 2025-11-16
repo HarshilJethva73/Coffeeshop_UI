@@ -12,7 +12,7 @@ class Main extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Hot', style: TextStyle(color: Colors.white, fontSize: 16.0)),
+          Text('Hot', style: TextStyle(color: Colors.white, fontSize: 20.0)),
           Text(
             coffee.name,
             style: Theme.of(context).textTheme.displayMedium!.copyWith(
@@ -34,6 +34,7 @@ class Main extends StatelessWidget {
                           .copyWith(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
+                            fontSize: 25.0,
                           ),
                     ),
                   ],
@@ -44,7 +45,11 @@ class Main extends StatelessWidget {
                   padding: const EdgeInsets.all(30.0),
                   child: Hero(
                     tag: '${coffee.id}',
-                    child: Image.asset(coffee.image, fit: BoxFit.fill),
+                    child: Image.asset(
+                      coffee.image,
+                      height: 200,
+                      fit: BoxFit.fill,
+                    ),
                   ),
                 ),
               ),
