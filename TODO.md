@@ -1,0 +1,2 @@
+- [x] Update lib/models/Coffee.dart: Add category field to Coffee class, assign categories to existing coffees, and add new coffees to have exactly 3 per category as specified.
+- [x] Update lib/home_screen/components/body.dart: Modify the ListView.builder to filter and display only coffees matching the selected category.
